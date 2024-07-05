@@ -61,6 +61,29 @@ To build the application for production, run:
 npm run build
 ```
 
+### Server
+
+1. Clone the repository:
+
+   ```sh
+   git clone https://github.com/sai-teja-git/nest-js-functionality.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```sh
+   cd nest-js-functionality
+   ```
+
+3. Install the dependencies:
+   ```sh
+   npm install
+   ```
+4. To start the development server, run:
+   ```sh
+   npm run start:dev
+   ```
+
 The production-ready files will be generated in the `dist` directory.
 
 ## Axios Interceptor Details
