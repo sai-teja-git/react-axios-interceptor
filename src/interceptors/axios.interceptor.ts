@@ -192,11 +192,11 @@ const onResponseError = async (error: AxiosError, axiosInstance: AxiosInstance):
             failedRequests = [];
             refreshTokenInprogress = false;
             redirect("Session Expired", "session-expired")
-            return Promise.reject();
+            return Promise.reject(error);
         }
         return axiosInstance(originalRequest)
     }
-    return Promise.reject();
+    return Promise.reject(error);
 }
 
 /**

@@ -31,14 +31,14 @@ export default function Data() {
                 time: new Date().getTime()
             }).then(() => {
                 currentCount++
-            }),
+            }).catch(e => { console.log('e', e) }),
             apiService.postRawData({
                 id: uuidv4(),
                 count: currentCount,
                 time: new Date().getTime()
             }).then(() => {
                 currentCount++
-            })
+            }).catch(e => console.log('e', e))
         ])
         apiService.getFileData().then((res) => {
             console.log('res.data', res.data);
